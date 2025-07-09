@@ -1,0 +1,104 @@
+mongosh
+use celliron
+show collections
+db.coupons.find()
+
+
+
+
+
+
+
+db.coupons.updateMany({used:true},{ $set: { used: false }})
+db.coupons.insertMany([{code:'8805312715', used:false},{code:'9528746', used:false}])
+
+db.coupon_report.findOne({},{ _id: 1, phNumber: 1, code: 1,  isValid: false}, {sort: { _id: -1, }})
+db.coupon_report.findOne({},{ _id: 1, phoneNumber: 1, code: 1, isValid:true }, {sort: { _id: -1, }})
+
+db.users.deleteMany({});
+
+db.users.deleteMany({ name: "John" });
+
+db.users.countDocuments({});
+
+
+AWS:
+cd /path (frontend) -> pm2 start npm -- start
+cd /path (Backend) -> pm2 start server.js
+pm2 status
+
+db.coupons.insertMany([
+{ code: 't8579456879', used: false },
+    { code: 't85794578', used: false }
+])
+
+
+t8579456879
+t8579456879
+t85794578
+t894578
+t8512578
+t81478978
+t889574568
+t812543145
+t51478529
+t23897456
+t45874125
+t698744125
+t147985524
+t658749823
+t987450147
+t025573698
+t758456982
+t01254785
+
+t501479874
+t689524854
+t7Rk9Pm2
+t5LpHx1v
+t3QyW6mN
+t8FkD4jH
+t2VbR9cG
+t1KvY7wZ
+t4DjF2pL
+t6YwX8sT
+t9PbA3Rk
+t2FqK1vZ
+
+db.coupons.insertMany([{code:'t501479874', used:false},{code:'t689524854', used:false},
+{code:'t7Rk9Pm2', used:false},{code:'t5LpHx1v', used:false},
+{code:'t3QyW6mN', used:false},{code:'t81478978', used:false},
+{code:'t2VbR9cG', used:false},{code:'t1KvY7wZ', used:false},
+{code:'t4DjF2pL', used:false},{code:'t6YwX8sT', used:false},
+{code:'t9PbA3Rk', used:false},{code:'t2FqK1vZ', used:false}
+])
+
+
+8825512437
+8813012699
+8813712827
+8837212577
+8802112835
+8822312729
+8842312661
+8820512901
+8781212674
+8805312715
+8896011372
+8710810543
+8715812624
+8930313034
+8682712515
+8754810666
+8867311604
+
+db.coupons.insertMany([{code:'8813712827', used:false},{code:'8837212577', used:false},
+{code:'8802112835', used:false},{code:'8822312729', used:false},
+{code:'8842312661', used:false},{code:'8820512901', used:false},
+{code:'8781212674', used:false},{code:'8805312715', used:false},
+{code:'8896011372', used:false},{code:'8710810543', used:false},
+{code:'8715812624', used:false},{code:'8930313034', used:false},
+{code:'8682712515', used:false},{code:'8754810666', used:false},
+{code:'8867311604', used:false}
+])
+
